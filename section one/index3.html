@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- React setting up Boiler plate code and Developer envirnoment by adding these scripts -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- React Library -->
+    <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+    <!-- React Dom -->
+    <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+    <!-- Bbble Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+
+    <title>Let's React</title>
+</head>
+
+<body>
+    <!-- Designated Location to insert React Content -->
+    <!-- JavaScript -->
+    <div id="app">React not Rendered Yet</div>
+    <script type="text/babel">
+        // Create a variable For JSX and For Location
+
+        // Variable for JSX 
+var hello = <h1> Hello World </h1>
+        // Variable For Locaiton
+var destination = document.getElementById("app");
+        // Render react to DOM - Will accept Two arguments (React What, React Where)
+        ReactDOM.render(
+            // React What variable for JSX
+            hello,
+            // React where -Div with ID app
+            destination
+        );
+    </script>
+
+</body>
+
+</html>
