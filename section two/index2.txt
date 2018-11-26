@@ -1,0 +1,10 @@
+In this lesson we're going to look at making class components we will
+accomplish this with six classes.
+
+Let's take a quick look at how the Mozilla developer network defines iOS 6 
+classes javascript classes introduced in ECMAScript 2015 are primarily syntactical sugar over
+Java scripts existing prototype based inheritance.
+The class syntax is not introducing a new object oriented inheritance 
+model to javascript javascript 
+classes provide a much simpler and clearer syntax to create objects and deal with inheritance.
+

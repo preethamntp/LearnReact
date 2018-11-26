@@ -1,0 +1,7 @@
+Functional stateless Components.
+
+State not managed
+easier to read
+easier to write
+Better performance
+No "this" Key word

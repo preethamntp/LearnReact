@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- React Library -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <!-- React DOM -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- Babel liberary -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <title>Class Components</title>
+</head>
+
+<body>
+    <div id="app">Raact has not rendered yet</div>
+    <script type="text/babel">
+
+        // Create Our First Component
+        class Shapes extends React.Component{
+            render(){
+                return (
+                    <h1>
+                    Circle, Square, Reactangle
+                    </h1>
+                );
+            }
+        }
+    // Challenge
+    // Create Class Components For Circle, Square, Reactangle
+    // Render to the dom withi na parent div
+
+    class Circle extends React.Component{
+        render(){
+            return(
+                <h1> Circle </h1>
+            );
+        }
+    }
+    class Square extends React.Component{
+        render(){
+            return(
+                <h2>Square</h2>
+            );
+        }
+    }
+    class Rectangle extends React.Component{
+        render(){
+            return(
+                <h3>Rectangle</h3>
+            );
+        }
+    }
+
+        ReactDOM.render(
+        // React WHAT, React WHERE
+        <div>
+            <Shapes/>
+            <Circle/>
+            <Square/>
+            <Rectangle/>
+        </div>,
+        document.getElementById("app")
+    );
+    </script>
+</body>
+
+</html>
